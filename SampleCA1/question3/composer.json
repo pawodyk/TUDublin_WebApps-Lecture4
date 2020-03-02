@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "php -S 127.0.0.1:5050 -t ./public"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tudublin\\": "src"
+    }
+  },
+  "require": {
+    "twig/twig": "^3.0"
+  }
+}
