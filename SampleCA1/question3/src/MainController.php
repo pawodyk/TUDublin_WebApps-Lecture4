@@ -29,5 +29,11 @@ class MainController {
         $this->renderPage($template,$args);
     }
 
+    public function contact(){
+        $template = 'contact.html.twig';
+        $args = ['pageTitle'=>"Contact Information"];
+        $this->renderPage($template,$args);
+    }
+
 
 }
