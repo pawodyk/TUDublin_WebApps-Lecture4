@@ -4,7 +4,7 @@
 <body>
 
 <h1>Campus user</h1>
-<form action="processUser.php" method="GET">
+<form action="/?page=processData" method="POST">
     Name:
     <input name="name">
 
