@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>{{pageTitle}}</title>
+
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
-
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/?action=about">About</a>
-        </li>
-    </ul>
+    <nav>
+        <ul>
+            <li>
+                <a class="{% block nav_home %}{% endblock %}" href="/">Home</a>
+            </li>
+            <li>
+                <a class="{% block nav_about %}{% endblock %}" href="/?action=about">About</a>
+            </li>
+        </ul>
+    </nav>
 
     {% block content %}
     {% endblock %}
